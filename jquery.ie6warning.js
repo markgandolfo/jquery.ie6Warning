@@ -15,8 +15,7 @@ jQuery.fn.ie6warning = function (options) {
   return this.each(function () {
 		var	element = jQuery(this);
 		var cookie_name = 'ie6WarningMessage';
-		var options = { path '/', expires: 20 };
-
+		var options = { path: '/', expires: 20 };
 
 		if(( $.browser.msie ) && ( $.browser.version < 7 )) {
 			if($.cookie(cookie_name) != 1) {
